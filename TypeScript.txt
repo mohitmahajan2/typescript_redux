@@ -1,0 +1,21 @@
+TypeScript
+
+const LoginProps : {
+    isLoggedIn: boolean;
+    username: string;
+    password: string;
+    id: string | number; //eithter string or number
+    personList: {
+        firstName: string;
+        lastName: string;
+        age: number;
+        address: {
+            cityName:string,
+            zipcode?:number; // not comupalsary to receive but if receive it must be of number type
+        };
+    }[] //array of object
+    handleSubmit: (e: React.MouseEvent<HTMLButtonElement>) => void; // onclick on button
+    handleChangeInputVal: (e: React.ChangeEvent<HTMLInputElement>) => void; // handle input change
+}
+
+const {zipcode = 0 } = props;

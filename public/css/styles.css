@@ -1,0 +1,9 @@
+    
+:root{
+    --orange:'#ffc426';
+    -bg-gray:'#F0F2F3';
+}
+
+.my-jj{
+    background-color: var(--orange);
+}
